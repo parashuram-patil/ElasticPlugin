@@ -1,15 +1,37 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+archivesBaseName = 'elasticsearch-plugin'
+version = '1.0.0'
 
 compileJava.options.encoding = 'UTF-8'
 
+configurations {
+    includeJars
+    provided
+    compile.extendsFrom provided
+}
+
 repositories {
-    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
+  provided 'org.elasticsearch:elasticsearch:2.1.1'
+		
+  compile 'com.fasterxml.jackson.core:jackson-databind:2.6.2'
+  compile 'commons-collections:commons-collections:3.2.2'
+  compile 'org.apache.zookeeper:zookeeper:3.4.9'
+}
+
+task plugin(type: Zip, dependsOn:[':jar']) {
+	dependsOn configurations.compile
+	from files(libsDir)
+    from('src/main/scripts')
+    from {(configurations.compile - configurations.provided)}
+    
+}
+
+artifacts {
+    archives plugin
 }
