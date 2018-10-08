@@ -50,7 +50,7 @@ class ProtocolSupport {
     private long                retryDelay          = ZooKeeperUtil.ZK_CONNECTION_RETRY_DELAY;
     private int                 retryCount          = ZooKeeperUtil.ZK_CONNECTION_RETRY_COUNT;
     private List<ACL>           acl                 = ZooDefs.Ids.OPEN_ACL_UNSAFE;
-    private final String        EVENT_THREAD_SUFFIX = "EventThread";
+    //private final String        EVENT_THREAD_SUFFIX = "EventThread";
 
     public ProtocolSupport(ZooKeeper zookeeper) {
         this.zookeeper = zookeeper;
@@ -187,10 +187,10 @@ class ProtocolSupport {
     protected String createZnode(String lockPath, ZooKeeper zookeeper, byte[] data, CreateMode mode) throws KeeperException, InterruptedException
     {
       String lock= null;
-      String threadName = Thread.currentThread().getName();
-      if(!threadName.endsWith(EVENT_THREAD_SUFFIX)) {
+      //String threadName = Thread.currentThread().getName();
+      //if(!threadName.endsWith(EVENT_THREAD_SUFFIX)) {
         lock = zookeeper.create(lockPath, data, getAcl(), mode);
-      }
+      //}
 
       return lock;
     }
