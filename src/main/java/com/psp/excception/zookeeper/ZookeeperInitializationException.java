@@ -1,4 +1,4 @@
-package com.cs.excception.zookeeper;
+package com.psp.excception.zookeeper;
 
 public class ZookeeperInitializationException extends Exception {
   

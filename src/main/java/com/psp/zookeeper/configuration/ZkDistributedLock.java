@@ -1,4 +1,4 @@
-package com.cs.zookeeper.configuration;
+package com.psp.zookeeper.configuration;
 
 import java.io.IOException;
 import java.util.List;

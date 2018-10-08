@@ -1,4 +1,4 @@
-package com.cs.excception.plugin;
+package com.psp.excception.plugin;
 
 public class PluginException extends Exception {
   

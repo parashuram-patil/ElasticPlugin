@@ -1,4 +1,4 @@
-package com.cs.plugin.configuration;
+package com.psp.plugin.configuration;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,10 +12,10 @@ import org.elasticsearch.rest.RestController;
 import org.elasticsearch.rest.RestRequest;
 import org.elasticsearch.rest.RestRequest.Method;
 
-import com.cs.excception.plugin.PluginException;
-import com.cs.response.ResponseCarrier;
-import com.cs.util.jackson.ObjectMapperUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.psp.excception.plugin.PluginException;
+import com.psp.response.ResponseCarrier;
+import com.psp.util.jackson.ObjectMapperUtil;
 
 public abstract class AbstractElasticPlugin extends BaseRestHandler {
   

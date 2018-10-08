@@ -1,4 +1,4 @@
-package com.cs.zookeeper.configuration;
+package com.psp.zookeeper.configuration;
 
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
@@ -9,11 +9,11 @@ import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.ACL;
 
-import com.cs.excception.zookeeper.InstanceLockException;
-import com.cs.util.zookeeper.ZooKeeperUtil;
-import com.cs.zookeeper.lib.LockListener;
-import com.cs.zookeeper.lib.WriteLock;
-import com.cs.zookeeper.lib.WriteLock.LockTypes;
+import com.psp.excception.zookeeper.InstanceLockException;
+import com.psp.util.zookeeper.ZooKeeperUtil;
+import com.psp.zookeeper.lib.LockListener;
+import com.psp.zookeeper.lib.WriteLock;
+import com.psp.zookeeper.lib.WriteLock.LockTypes;
 
 public class ZkBlockingWriteLock {
   

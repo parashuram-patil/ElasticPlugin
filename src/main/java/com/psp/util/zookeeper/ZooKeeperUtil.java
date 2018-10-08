@@ -1,4 +1,4 @@
-package com.cs.util.zookeeper;
+package com.psp.util.zookeeper;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.ZooKeeper;
 
-import com.cs.excception.zookeeper.ZookeeperInitializationException;
+import com.psp.excception.zookeeper.ZookeeperInitializationException;
 
 public class ZooKeeperUtil {
   

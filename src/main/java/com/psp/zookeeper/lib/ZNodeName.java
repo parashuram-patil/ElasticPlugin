@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.cs.zookeeper.lib;
+package com.psp.zookeeper.lib;
 
 /**
  * Copied directly from the ZooKeeper lock recipe, and modified slightly (e.g. for Sonar rule violations).

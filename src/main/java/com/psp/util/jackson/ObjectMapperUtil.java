@@ -1,4 +1,4 @@
-package com.cs.util.jackson;
+package com.psp.util.jackson;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.cs.util.zookeeper;
+package com.psp.util.zookeeper;
 
 import java.io.InputStream;
 import java.util.HashMap;
@@ -12,8 +12,8 @@ import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.rest.RestController;
 
-import com.cs.excception.zookeeper.ZookeeperInitializationException;
-import com.cs.plugin.configuration.AbstractElasticPlugin;
+import com.psp.excception.zookeeper.ZookeeperInitializationException;
+import com.psp.plugin.configuration.AbstractElasticPlugin;
 
 public class InitializeZookeeper extends AbstractElasticPlugin {
   

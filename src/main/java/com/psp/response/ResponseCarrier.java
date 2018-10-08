@@ -1,4 +1,4 @@
-package com.cs.response;
+package com.psp.response;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import org.elasticsearch.rest.BytesRestResponse;
 import org.elasticsearch.rest.RestChannel;
 import org.elasticsearch.rest.RestStatus;
 
-import com.cs.util.jackson.ObjectMapperUtil;
+import com.psp.util.jackson.ObjectMapperUtil;
 
 public class ResponseCarrier {
   

@@ -1,4 +1,4 @@
-package com.cs.plugin.configuration;
+package com.psp.plugin.configuration;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import org.elasticsearch.common.inject.AbstractModule;
 import org.elasticsearch.common.inject.Module;
 import org.elasticsearch.plugins.Plugin;
 
-import com.cs.url.handler.RequestHandler;
+import com.psp.url.handler.RequestHandler;
 
 public class PluginConfiguration extends Plugin {
   

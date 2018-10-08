@@ -1,4 +1,4 @@
-package com.cs.url.handler;
+package com.psp.url.handler;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.inject.Inject;
@@ -12,7 +12,7 @@ import org.elasticsearch.rest.RestRequest.Method;
 import org.elasticsearch.rest.RestResponse;
 import org.elasticsearch.rest.RestStatus;
 
-import com.cs.util.zookeeper.InitializeZookeeper;
+import com.psp.util.zookeeper.InitializeZookeeper;
 
 public class RequestHandler extends BaseRestHandler {
 

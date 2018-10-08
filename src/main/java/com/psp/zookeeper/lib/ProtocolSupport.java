@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.cs.zookeeper.lib;
+package com.psp.zookeeper.lib;
 
 import static java.util.Objects.isNull;
 
@@ -30,8 +30,8 @@ import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.data.Stat;
 
-import com.cs.util.thread.ThreadUtil;
-import com.cs.util.zookeeper.ZooKeeperUtil;
+import com.psp.util.thread.ThreadUtil;
+import com.psp.util.zookeeper.ZooKeeperUtil;
 
 /**
  * Copied directly from the ZooKeeper lock recipe, and modified slightly (e.g. for Sonar rule violations).
