@@ -13,7 +13,7 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.rest.RestController;
 
 import com.psp.excception.zookeeper.ZookeeperInitializationException;
-import com.psp.plugin.configuration.AbstractElasticPlugin;
+import com.psp.url.handler.AbstractElasticPlugin;
 
 public class InitializeZookeeper extends AbstractElasticPlugin {
   

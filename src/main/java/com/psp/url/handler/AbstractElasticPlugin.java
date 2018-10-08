@@ -1,4 +1,4 @@
-package com.psp.plugin.configuration;
+package com.psp.url.handler;
 
 import java.util.HashMap;
 import java.util.Map;
